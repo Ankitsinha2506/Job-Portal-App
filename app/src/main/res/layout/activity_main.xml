@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DarkKhaki"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:subtitleTextColor="@color/BurlyWood"
+            android:title="Job Portal"
+            android:titleTextColor="@color/white"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/centerHorizonralLine" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/centerVerticalLine" />
+
+
+    <RelativeLayout
+        android:id="@+id/leftUpperCard"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="38dp"
+        android:layout_toStartOf="@+id/centerVerticalLine"
+        android:background="@drawable/leftfocus">
+
+    <TextView
+        android:id="@+id/textMale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:text="Left Upper Card"
+        android:textAlignment="center"
+        android:textColor="@color/Black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rightUpperCard"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/leftfocus">
+
+        <TextView
+            android:id="@+id/textFemale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:text="Right Upper Card"
+            android:textAlignment="center"
+            android:textColor="@color/Black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
